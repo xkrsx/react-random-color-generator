@@ -22,10 +22,11 @@
     ]
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
     "@upleveled/react-scripts": "5.0.13",
     "formik": "^2.4.6",
+    "parse-color": "^1.0.0",
     "randomcolor": "^0.6.2",
+    "rc-slider": "^10.6.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "1.77.1"
