@@ -77,7 +77,7 @@ export default function App() {
                 cursor: 'pointer',
               }}
             >
-              <p>Generate{color}</p>
+              <p>Generate</p>
             </button>
           </form>
           <p>
