@@ -87,18 +87,17 @@ export default function App() {
             margin: '20px auto',
             transition: 'all 0.4s ease',
             cursor: 'progress',
+            textAlign: 'center',
           }}
         >
-          <div style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
-            {/* {!color
+          {/* {!color
               ? 'Click the button to generate' */}
-            {/* : */}
-            Generated color: {color}
-            {/* } */}
-            {/* {luminosity === 'WORK IN PROGRESS' || luminosity === ''
+          {/* : */}
+          Generated color: {color}
+          {/* } */}
+          {/* {luminosity === 'WORK IN PROGRESS' || luminosity === ''
                 ? ''
                 : 'Your custom luminosity is ' + luminosity} */}
-          </div>
         </div>
       </div>
     </>
