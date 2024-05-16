@@ -8,7 +8,7 @@ import Header from './components/Header';
 
 export default function App() {
   const randomColor = randomcolor();
-  const [color, setColor] = useState('');
+  const [color, setColor] = useState('#ffffff');
   const [luminosity, setLuminosity] = useState('WORK IN PROGRESS');
   const [width, setWidth] = useState('250');
   const [height, setHeight] = useState('250');
@@ -90,10 +90,11 @@ export default function App() {
           }}
         >
           <div style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
-            {!color
-              ? 'Click the button to generate'
-              : 'Generated color: ' + color}
-
+            {/* {!color
+              ? 'Click the button to generate' */}
+            {/* : */}
+            'Generated color: ' + color
+            {/* } */}
             {/* {luminosity === 'WORK IN PROGRESS' || luminosity === ''
                 ? ''
                 : 'Your custom luminosity is ' + luminosity} */}
