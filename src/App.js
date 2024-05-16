@@ -11,21 +11,18 @@ export default function App() {
   const [luminosity, setLuminosity] = useState('WORK IN PROGRESS');
   const [width, setWidth] = useState('250');
   const [height, setHeight] = useState('250');
-  const colorBoxWidth = width + 'px';
-  const colorBoxHeight = height + 'px';
+  const colorBoxWidth = width > '100vw' ? width + 'px' : '100vw';
+  const colorBoxHeight = height > '100vw' ? height + 'px' : '100vw';
 
-  const luminosityCheck = (luminosity) => {
-    'red';
-    if (
-      luminosity === 'light' ||
-      luminosity === 'dark' ||
-      luminosity === 'bright'
-    ) {
-      randomcolor({ luminosity: luminosity });
-    } else {
-      randomcolor();
-    }
-  };
+  if (
+    luminosity === 'light' ||
+    luminosity === 'dark' ||
+    luminosity === 'bright'
+  ) {
+    randomcolor({ luminosity: luminosity });
+  } else {
+    randomColor;
+  }
 
   return (
     <>
@@ -41,12 +38,12 @@ export default function App() {
       >
         <div>
           <form onSubmit={(event) => event.preventDefault()}>
-            <p>Your custom luminosity</p>
+            <p>Your custom luminosity (eg. dark, light brown</p>
             <input
               value={luminosity}
               onChange={(event) => setLuminosity(event.currentTarget.value)}
             />
-            <p>Your custom color</p>
+            <p>Your custom color in hue format (eg. red, blue, yellow)</p>
             <input
               value={color}
               onChange={(event) =>
@@ -56,15 +53,17 @@ export default function App() {
             <p>Your custom size</p>
             <input
               value={width}
-              type={'number'}
+              type="number"
               onChange={(event) => setWidth(event.currentTarget.value)}
             />
+            px x{' '}
             <input
               value={height}
-              type={'number'}
+              type="number"
               onChange={(event) => setHeight(event.currentTarget.value)}
             />
-            <p>Generate your custom color or luminosity.</p>
+            px
+            <p>Generate your custom box, color and/or luminosity!</p>
             <button
               onClick={() => setColor(randomColor)}
               style={{
@@ -80,6 +79,8 @@ export default function App() {
               Generate{}
             </button>
           </form>
+          You can also just click on the above buttoned and generate random
+          color!
         </div>
         <div
           style={{
@@ -101,6 +102,11 @@ export default function App() {
             {!color
               ? 'Click the button to generate'
               : 'Generated color: ' + color}
+          </p>
+          <p style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
+            {luminosity === 'WORK IN PROGRESS' || luminosity === ''
+              ? ''
+              : 'You custom luminosity is ' + luminosity}
           </p>
         </div>
       </div>
