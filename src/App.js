@@ -12,8 +12,8 @@ export default function App() {
   const [luminosity, setLuminosity] = useState('WORK IN PROGRESS');
   const [width, setWidth] = useState('250');
   const [height, setHeight] = useState('250');
-  const colorBoxWidth = width > '100vw' ? width + 'px' : '100vw';
-  const colorBoxHeight = height > '100vh' ? height + 'px' : '100vh';
+  const colorBoxWidth = width > '100%' ? width + 'px' : '100%';
+  const colorBoxHeight = height > '358px' ? height + 'px' : '358px';
 
   if (
     luminosity === 'light' ||
