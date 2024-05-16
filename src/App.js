@@ -93,7 +93,7 @@ export default function App() {
             {/* {!color
               ? 'Click the button to generate' */}
             {/* : */}
-            'Generated color: ' + color
+            Generated color: {color}
             {/* } */}
             {/* {luminosity === 'WORK IN PROGRESS' || luminosity === ''
                 ? ''
