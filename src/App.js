@@ -57,13 +57,13 @@ export default function App() {
               type="number"
               onChange={(event) => setWidth(event.currentTarget.value)}
             />
-            <p>px x </p>
+            px <strong>x</strong>{' '}
             <input
               value={height}
               type="number"
               onChange={(event) => setHeight(event.currentTarget.value)}
             />
-            <p>px</p>
+            px
             <p>Generate your custom box, color and/or luminosity!</p>
             <button
               onClick={() => setColor(randomColor)}
