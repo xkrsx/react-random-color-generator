@@ -66,7 +66,7 @@ export default function App() {
             />
             px
             <p>Generate your custom box, color and/or luminosity!</p>
-            <Button onClick={() => setColor(randomColor)} />
+            <Button onClick={() => setColor(randomColor)} text="Generate" />
           </form>
           <p>
             You can also generate a random color by clicking the above button

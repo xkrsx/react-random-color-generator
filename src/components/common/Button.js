@@ -1,4 +1,4 @@
-export default function Button({ onClick }) {
+export default function Button({ onClick, text }) {
   return (
     <button
       onClick={onClick}
@@ -12,7 +12,7 @@ export default function Button({ onClick }) {
         cursor: 'pointer',
       }}
     >
-      Generate
+      {text}
     </button>
   );
 }
