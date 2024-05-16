@@ -38,9 +38,10 @@ export default function App() {
       >
         <div>
           <form onSubmit={(event) => event.preventDefault()}>
-            <p>Your custom luminosity (eg. dark, light brown</p>
+            <p>Your custom luminosity (eg. dark, light brown)</p>
             <input
               value={luminosity}
+              disabled={true}
               onChange={(event) => setLuminosity(event.currentTarget.value)}
             />
             <p>Your custom color in hue format (eg. red, blue, yellow)</p>
@@ -79,8 +80,8 @@ export default function App() {
               Generate{}
             </button>
           </form>
-          You can also just click on the above buttoned and generate random
-          color!
+          You can also generate a random color by clicking the above button
+          without specifying luminosity and/or color yourself!
         </div>
         <div
           style={{
@@ -98,16 +99,18 @@ export default function App() {
             cursor: 'progress',
           }}
         >
-          <p style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
-            {!color
-              ? 'Click the button to generate'
-              : 'Generated color: ' + color}
-          </p>
-          <p style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
-            {luminosity === 'WORK IN PROGRESS' || luminosity === ''
-              ? ''
-              : 'You custom luminosity is ' + luminosity}
-          </p>
+          <div>
+            <p style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
+              {!color
+                ? 'Click the button to generate'
+                : 'Generated color: ' + color}
+            </p>
+            <p style={{ fontFamily: 'helvetica', textAlign: 'center' }}>
+              {luminosity === 'WORK IN PROGRESS' || luminosity === ''
+                ? ''
+                : 'Your custom luminosity is ' + luminosity}
+            </p>
+          </div>
         </div>
       </div>
     </>
