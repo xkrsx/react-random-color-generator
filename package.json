@@ -24,9 +24,6 @@
   "dependencies": {
     "@upleveled/react-scripts": "5.0.13",
     "formik": "^2.4.6",
-    "parse-color": "^1.0.0",
-    "randomcolor": "^0.6.2",
-    "rc-slider": "^10.6.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "1.77.1"
@@ -37,6 +34,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/node": "^20.12.12",
+    "@types/parse-color": "^1.0.3",
+    "@types/randomcolor": "^0.5.9",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "@types/testing-library__jest-dom": "^5.14.9",

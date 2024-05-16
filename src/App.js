@@ -22,6 +22,7 @@ export default function App() {
   ) {
     randomcolor({ luminosity: luminosity });
   } else {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     randomColor;
   }
 
