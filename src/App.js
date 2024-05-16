@@ -57,13 +57,13 @@ export default function App() {
               type="number"
               onChange={(event) => setWidth(event.currentTarget.value)}
             />
-            px x{' '}
+            <p>px x </p>
             <input
               value={height}
               type="number"
               onChange={(event) => setHeight(event.currentTarget.value)}
             />
-            px
+            <p>px</p>
             <p>Generate your custom box, color and/or luminosity!</p>
             <button
               onClick={() => setColor(randomColor)}
@@ -77,11 +77,13 @@ export default function App() {
                 cursor: 'pointer',
               }}
             >
-              Generate{}
+              <p>Generate{color}</p>
             </button>
           </form>
-          You can also generate a random color by clicking the above button
-          without specifying luminosity and/or color yourself!
+          <p>
+            You can also generate a random color by clicking the above button
+            without specifying luminosity and/or color yourself!
+          </p>
         </div>
         <div
           style={{
