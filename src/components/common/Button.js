@@ -11,8 +11,6 @@ export default function Button({ onClick }) {
         fontSize: '15px',
         cursor: 'pointer',
       }}
-    >
-      Generate
-    </button>
+    />
   );
 }
