@@ -1,6 +1,7 @@
 import parse from 'parse-color';
 import randomcolor from 'randomcolor';
 import { useState } from 'react';
+import Button from './components/common/Button.js';
 import Header from './components/Header';
 
 // import UserForm from './components/UserForm';
@@ -65,20 +66,7 @@ export default function App() {
             />
             px
             <p>Generate your custom box, color and/or luminosity!</p>
-            <button
-              onClick={() => setColor(randomColor)}
-              style={{
-                width: '100px',
-                height: '50px',
-                borderRadius: '5px',
-                border: '1px black solid',
-                margin: 'auto',
-                fontSize: '15px',
-                cursor: 'pointer',
-              }}
-            >
-              <p>Generate</p>
-            </button>
+            <Button onClick={() => setColor(randomColor)}>Generate</Button>
           </form>
           <p>
             You can also generate a random color by clicking the above button
