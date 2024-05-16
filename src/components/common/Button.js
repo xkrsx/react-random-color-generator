@@ -12,7 +12,7 @@ export default function Button({ onClick }) {
         cursor: 'pointer',
       }}
     >
-      <p>Generate</p>
+      Generate
     </button>
   );
 }

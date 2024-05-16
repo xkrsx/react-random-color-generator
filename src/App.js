@@ -13,7 +13,7 @@ export default function App() {
   const [width, setWidth] = useState('250');
   const [height, setHeight] = useState('250');
   const colorBoxWidth = width > '100vw' ? width + 'px' : '100vw';
-  const colorBoxHeight = height > '100vw' ? height + 'px' : '100vw';
+  const colorBoxHeight = height > '100vh' ? height + 'px' : '100vh';
 
   if (
     luminosity === 'light' ||
