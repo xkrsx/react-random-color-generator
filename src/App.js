@@ -90,14 +90,7 @@ export default function App() {
             textAlign: 'center',
           }}
         >
-          {/* {!color
-              ? 'Click the button to generate' */}
-          {/* : */}
           Generated Color: {color}
-          {/* } */}
-          {/* {luminosity === 'WORK IN PROGRESS' || luminosity === ''
-                ? ''
-                : 'Your custom luminosity is ' + luminosity} */}
         </div>
       </div>
     </>
